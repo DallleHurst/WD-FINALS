@@ -1,21 +1,248 @@
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-nav ul {
-    list-style-type: none;
+html, body {
     padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+html {
+    font: 1em/1.5 "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-nav ul li a {
-    color: white;
+body {
+    font-size: 1.3em;
+}
+
+header {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header video#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: no-repeat;
+    background-size: cover;
+}
+
+header .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .content img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #3f3f3f5a center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0;
+    -webkit-filter: blur(4px);
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #ffffff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+
+img {
+    margin-right: 20px;
+}
+
+.site {
+    padding: 0em 0;
+    text-align: center;
+    background-color: transparent; /* Initially transparent */
+    font-size: 1em;
+    color: #444444;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.site nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.site .logo {
+    max-width: 100px; /* Adjust as needed */
+}
+
+.site .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.site .nav-links a {
+    padding: 10px 20px;
+    font-size: 1.3em;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
+
+/* Add a pseudo-element for the underline effect */
+.site a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Hover effect for the nav links */
+.site .nav-links a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+.site .nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Add fade-in animation for nav links */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.site .nav-links a {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.site .nav-links a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.site .nav-links a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.site .nav-links a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.site .nav-links a:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.site .nav-links a:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.site.scrolled {
+    background-color: rgb(180, 180, 180);
+}
+
