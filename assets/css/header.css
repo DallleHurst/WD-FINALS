@@ -105,7 +105,7 @@ header .overlay {
     }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
+@-webkit-keyframes arrow {
     0% {
         opacity: 0
     }
@@ -126,19 +126,16 @@ header .overlay {
 .arrows path.a1 {
     animation-delay: -1s;
     -webkit-animation-delay: -1s;
-    /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
     animation-delay: -0.5s;
     -webkit-animation-delay: -0.5s;
-    /* Safari 和 Chrome */
 }
 
 .arrows path.a3 {
     animation-delay: 0s;
     -webkit-animation-delay: 0s;
-    /* Safari 和 Chrome */
 }
 
 img {
@@ -148,13 +145,13 @@ img {
 .site {
     padding: 0em 0;
     text-align: center;
-    background-color: transparent; /* Initially transparent */
+    background-color: transparent;
     font-size: 1em;
     color: #444444;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
 }
 
 .site nav {
@@ -165,7 +162,7 @@ img {
 }
 
 .site .logo {
-    max-width: 100px; /* Adjust as needed */
+    max-width: 100px;
 }
 
 .site .nav-links {
@@ -183,7 +180,6 @@ img {
     transition: all 0.3s ease;
 }
 
-/* Add a pseudo-element for the underline effect */
 .site a::after {
     content: '';
     position: absolute;
@@ -195,9 +191,8 @@ img {
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-/* Hover effect for the nav links */
 .site .nav-links a:hover {
-    color: gold; /* Change color on hover */
+    color: gold;
 }
 
 .site .nav-links a:hover::after {
@@ -205,7 +200,6 @@ img {
     left: 0;
 }
 
-/* Add fade-in animation for nav links */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -245,4 +239,3 @@ img {
 .site.scrolled {
     background-color: rgb(0, 0, 44);
 }
-
