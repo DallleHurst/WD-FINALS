@@ -200,16 +200,16 @@ img {
 }
 
 .profile-image {
-    border-radius: 25px; /* Significantly curved edges */
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed to make it even */
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
     border: 5px solid #fff;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    transition: all 0.3s ease;
 }
 
 .profile-image:hover {
-    border-color: gold; /* Change border color to gold */
-    transform: scale(1.1); /* Slightly enlarge the image */
+    border-color: gold;
+    transform: scale(1.1);
 }
 
 .profile-text {
@@ -218,12 +218,12 @@ img {
 
 .profile-text h2 {
     margin: 10px 0 5px;
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px;
 }
 
 .profile-text p {
     margin: 0;
-    font-size: 18px; /* Adjust as needed */
+    font-size: 18px;
 }
 
 .header-buttons {
@@ -233,8 +233,8 @@ img {
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 20px; /* Increased gap for better spacing */
-    z-index: 10; /* Ensure buttons are in front of other elements */
+    gap: 20px;
+    z-index: 10;
 }
 
 .circle-button {
@@ -250,11 +250,11 @@ img {
     transition: border-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
     position: relative;
-    z-index: 1; /* Ensure buttons are in front of pseudo-element */
+    z-index: 1;
 }
 
 .circle-button:hover {
-    border-color: gold; /* Gold border on hover */
+    border-color: gold;
 }
 
 .circle-button img {
@@ -265,25 +265,24 @@ img {
 }
 
 .circle-button:hover img {
-    transform: scale(1.1); /* Scale up image on hover */
+    transform: scale(1.1);
 }
 
-/* Pseudo-element for hover effect */
 .circle-button::before {
     content: '';
     position: absolute;
-    top: -2px; /* Adjust positioning to align with the border */
-    left: -2px; /* Adjust positioning to align with the border */
-    width: calc(100% + 4px); /* Adjust size to cover the border */
-    height: calc(100% + 4px); /* Adjust size to cover the border */
-    border: 2px solid transparent; /* Ensure border is covered */
-    border-radius: 50%; /* Ensure circle shape */
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border: 2px solid transparent;
+    border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Ensure this layer does not intercept clicks */
+    pointer-events: none;
 }
 
 .circle-button:hover::before {
-    opacity: 1; /* Show the pseudo-element on hover */
-    background-color: rgba(255, 215, 0, 0.3); /* Adjust opacity and color as needed */
+    opacity: 1;
+    background-color: rgba(255, 215, 0, 0.3);
 }
