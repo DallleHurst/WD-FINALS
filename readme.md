@@ -132,4 +132,4 @@ In the home page there are 5 different button and that is Home, About Me, Projec
 and if you scroll down you can see different social buttons and a footer which all of the pages have in the about me page you can see a brief information of myself aswell as a resume one if you clicked on the "read more" for the portfolio you can see all of my past works and for the contact and credit you can see my number and all of the resources i used
 
 ## Deployment link
-https://dalllehurst.github.io/WD-SW4-main/
+https://dalllehurst.github.io/WD-SW4-main/](https://dalllehurst.github.io/WD-Finals/
