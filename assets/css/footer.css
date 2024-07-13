@@ -26,16 +26,16 @@
 }
 
 .social-icon__link img {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    border-radius: 50%; /* Make it circular */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     overflow: hidden;
 }
 
 .social-icon__link {
     display: inline-block;
     font-size: 2rem;
-    color: #fff; /* Ensure icons are white */
+    color: #fff;
     transition: transform 0.3s ease;
 }
 
@@ -43,9 +43,8 @@
     transform: translateY(-5px);
 }
 
-/* Additional styling for ion-icon */
 .icon-white {
-    color: #fff !important; /* Ensure icons are white */
+    color: #fff !important;
 }
 
 .menu__link {
