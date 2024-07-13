@@ -15,11 +15,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 50vh; /* Adjust this as necessary */
+    height: 50vh;
 }
 
 .hed {
-    font-size: 2rem; /* Adjust the font size as necessary */
+    font-size: 2rem;
 }
 
 .hed::before {
