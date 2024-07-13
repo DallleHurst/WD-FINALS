@@ -4,23 +4,24 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/DallleHurst/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/pixelcut-export.png" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">WD-Finals</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+This project involves creating a personal website to showcase your design and web development skills, featuring at least five pages with unique layouts and content that highlight your experience, skills, and past projects.
+</div>
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=DallleHurst/WD-FINALS)
 
 ---
 
@@ -57,20 +58,21 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+This project involves creating a dynamic personal website using HTML, CSS, and JavaScript to showcase skills, qualifications, and past projects through at least five uniquely designed pages, deployed via GitHub Actions for online accessibility.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Personal Website
+- HTML
+- CSS
+- JavaScript
+- Skills Showcase
+- Qualifications
+- Past Projects
+- Unique Page Layouts
+- GitHub Actions
+- Online Deployment
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +119,17 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Github  | checking my past works  | https://github.com/Dall4leHurst?tab=repositories |
+| FreeFrontend | to see different type of design | https://freefrontend.com/ |
+| Youtube   | Searching different types of design | https://www.youtube.com/ |
+| Pexels | vid and img used | https://www.pexels.com/ |
+| Adobe | Editing of images | APK |
+| W3school | Ideas on the javascript and css code | https://www.w3schools.com/ |
+
+## Instructions
+
+In the home page there are 5 different button and that is Home, About Me, Project, Contact and Credit
+and if you scroll down you can see different social buttons and a footer which all of the pages have in the about me page you can see a brief information of myself aswell as a resume one if you clicked on the "read more" for the portfolio you can see all of my past works and for the contact and credit you can see my number and all of the resources i used
+
+## Deployment link
+https://dalllehurst.github.io/WD-SW4-main/
